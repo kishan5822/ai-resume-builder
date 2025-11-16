@@ -1,0 +1,84 @@
+﻿
+/* ========================================
+   DARK MODE STYLES
+   ======================================== */
+
+/* Theme transition for all elements */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+/* Dark mode color overrides */
+.dark {
+  color-scheme: dark;
+}
+
+/* Message bubbles in chat */
+.dark .message-content {
+  color: #e2e8f0;
+}
+
+/* Code blocks in dark mode */
+.dark code:not(pre code) {
+  background-color: #1e293b !important;
+  color: #f97316 !important;
+  border-color: #334155 !important;
+}
+
+/* Inline code in dark mode should be distinct */
+.dark .bg-gray-100 {
+  background-color: #1e293b;
+}
+
+.dark .text-gray-800 {
+  color: #e2e8f0;
+}
+
+.dark .text-gray-700 {
+  color: #cbd5e1;
+}
+
+.dark .text-gray-600 {
+  color: #94a3b8;
+}
+
+.dark .text-gray-500 {
+  color: #64748b;
+}
+
+/* Border colors */
+.dark .border-gray-200 {
+  border-color: #334155;
+}
+
+.dark .border-gray-300 {
+  border-color: #475569;
+}
+
+/* Hover states */
+.dark .hover\:bg-gray-50:hover {
+  background-color: #1e293b;
+}
+
+.dark .hover\:bg-gray-100:hover {
+  background-color: #334155;
+}
+
+/* Button focus states */
+.dark .focus-within\:border-orange-500:focus-within {
+  border-color: #f97316;
+}
+
+/* Monaco Editor dark mode support */
+.dark .monaco-editor,
+.dark .monaco-editor-background {
+  background-color: #0f172a !important;
+}
+
+/* PDF Preview dark mode */
+.dark canvas {
+  filter: brightness(0.9);
+}
+
